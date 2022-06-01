@@ -25,7 +25,7 @@ from sqlalchemy import true
 from forms import *
 from flask_wtf import Form
 from flask_migrate import Migrate
-
+from models import db, Venue, Artist, Show, Genre
 from datetime import datetime
 import re
 from operator import itemgetter # for sorting lists of tuples
