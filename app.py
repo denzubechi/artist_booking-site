@@ -37,7 +37,7 @@ from operator import itemgetter # for sorting lists of tuples
 app = Flask(__name__)
 moment = Moment(app)
 app.config.from_object('config')
-db = SQLAlchemy(app)
+db.init_app(app)
 
 # connect to a local postgresql database
 migrate = Migrate(app, db)
